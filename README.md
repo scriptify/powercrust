@@ -8,4 +8,4 @@ website:
 It is a fork of [https://github.com/kubkon/powercrust](https://github.com/kubkon/powercrust)
 
 ## Introduction
-Convert pointclouds into 3D Meshes with ease.
+Convert pointclouds into 3D Meshes with an easy to use JavaScript API.

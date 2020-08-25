@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "Webassembly port of the powercrust meshing algorithm",
   "main": "lib/index.js",
+  "module": "lib/index.js",
   "repository": "https://github.com/scriptify/powercrust.git",
   "author": "Maximilian Torggler <maximilian.torggler@tuta.io>",
   "scripts": {

@@ -10,6 +10,9 @@ It is a fork of [https://github.com/kubkon/powercrust](https://github.com/kubkon
 ## Introduction
 Convert pointclouds into 3D Meshes with an easy to use JavaScript API.
 
+Make sure that the file `lib/wasm/powercrust.wasm` can be loaded from `/powercrust.wasm`.
+If you are using webpack, you can use the `webpack-copy-plugin` to automatically copy it to your static folder. You can of course also copy it over manually.
+
 Usage:
 
 ```javascript

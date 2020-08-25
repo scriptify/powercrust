@@ -1,2 +1,6 @@
 target
 .DS_Store
+
+*.o
+
+node_modules

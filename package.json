@@ -1,0 +1,22 @@
+{
+  "name": "powercrust-wasm",
+  "version": "1.0.0",
+  "description": "Webassembly port of the powercrust meshing algorithm",
+  "main": "lib/index.js",
+  "repository": "https://github.com/kubkon/powercrust.git",
+  "author": "Maximilian Torggler <maximilian.torggler@tuta.io>",
+  "scripts": {
+    "clean": "make clean",
+    "build": "npm run clean && emmake make",
+    "dev": "live-server example"
+  },
+  "license": "GPL-2.0+",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

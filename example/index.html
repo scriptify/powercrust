@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Powercrust in the browser</title>
+Open the console to see the output from the wasm module.
+<script type="module">
+  import powercrust from "../lib/index.js";
+
+  async function main() {
+    const input = await fetch('models/hotdogs.pts').then(res => res.text());
+    powercrust(input)
+  }
+
+  main()
+</script>

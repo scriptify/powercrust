@@ -867,34 +867,34 @@ int main(int argc, char **argv) {
   fprintf(HEAD,"OFF\n");
   fprintf(HEAD,"%d %d %d\n",num_vtxs,num_faces,0);
   efclose(HEAD);
-  system("cat head pc pnf > pc.off");
-  system("rm head pc pnf");
+  // system("cat head pc pnf > pc.off");
+  // system("rm head pc pnf");
 
-  /* compute the medial axis */
-  pr=compute_axis;
-  fprintf(DFILE,"\n\n computing the medial axis ....\n");
-  make_output(root,visit_hull,pr,mof,OUTFILE);
+  // /* compute the medial axis */
+  // pr=compute_axis;
+  // fprintf(DFILE,"\n\n computing the medial axis ....\n");
+  // make_output(root,visit_hull,pr,mof,OUTFILE);
 
-  HEAD = fopen("head","w");
-  fprintf(HEAD,"OFF\n");
-  fprintf(HEAD,"%d %d %d\n",num_poles,num_axedgs,0);
-  efclose(HEAD);
-  efclose(AXIS);
-  system("cat head pole axis > axis.off");
+  // HEAD = fopen("head","w");
+  // fprintf(HEAD,"OFF\n");
+  // fprintf(HEAD,"%d %d %d\n",num_poles,num_axedgs,0);
+  // efclose(HEAD);
+  // efclose(AXIS);
+  // system("cat head pole axis > axis.off");
 
-  HEAD=fopen("head","w");
-  fprintf(HEAD,"%d %d \n", num_poles,num_axedgs);
-  efclose(HEAD);
+  // HEAD=fopen("head","w");
+  // fprintf(HEAD,"%d %d \n", num_poles,num_axedgs);
+  // efclose(HEAD);
 
-  system("cat head tpoleinfo axis > poleinfo");
+  // system("cat head tpoleinfo axis > poleinfo");
 
-  HEAD = fopen("head","w");
-  fprintf(HEAD,"OFF\n");
-  fprintf(HEAD,"%d %d %d\n",num_poles,num_axfaces,0);
-  efclose(HEAD);
-  efclose(AXISFACE);
-  system("cat head pole axisface > axisface.off");
-  system("rm -f head pole axis axisface tpoleinfo sp");
+  // HEAD = fopen("head","w");
+  // fprintf(HEAD,"OFF\n");
+  // fprintf(HEAD,"%d %d %d\n",num_poles,num_axfaces,0);
+  // efclose(HEAD);
+  // efclose(AXISFACE);
+  // system("cat head pole axisface > axisface.off");
+  // system("rm -f head pole axis axisface tpoleinfo sp");
   /* power shape output done */
 
   efclose(INPOLE);

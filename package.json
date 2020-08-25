@@ -1,6 +1,6 @@
 {
   "name": "powercrust-wasm",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Webassembly port of the powercrust meshing algorithm",
   "main": "lib/index.js",
   "repository": "https://github.com/kubkon/powercrust.git",
@@ -18,5 +18,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "semantic-release": "^17.1.1"
   }
 }

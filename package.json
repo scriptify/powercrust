@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "make clean",
     "build": "npm run clean && emmake make",
-    "dev": "live-server example"
+    "dev": "live-server ."
   },
   "license": "GPL-2.0+",
   "devDependencies": {

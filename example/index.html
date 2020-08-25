@@ -6,7 +6,9 @@ Open the console to see the output from the wasm module.
 
   async function main() {
     const input = await fetch('models/hotdogs.pts').then(res => res.text());
-    powercrust(input)
+    const asArray = input.split('\n').map(splitted => splitted.split(' ').map(s => parseFloat(s))).flat().filter(num => num);
+    const res = await powercrust(asArray)
+    console.log('res', res)
   }
 
   main()
